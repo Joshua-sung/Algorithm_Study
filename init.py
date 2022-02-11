@@ -1,7 +1,5 @@
 # print('\"!@#$%^&*()\'')
-
 # print('\"C:\\Download\\\'hello\'.py\"')
-
 # print("print(\"Hello\\nWorld\")")
 
 #6013
@@ -65,6 +63,30 @@
 # print(chr(c))  #c에 저장되어 있는 정수 값을 유니코드 문자(chracter)로 바꿔 출력한다. 
 
 #6043
-a,b = input().split(' ')
-c=float(a)/float(b)
-print(format(c,".3f"))
+# a,b = input().split(' ')
+# c=float(a)/float(b)
+# print(format(c,".3f"))
+
+#6044
+# a,b = input().split(' ')
+# a44=int(a)
+# b44=int(b)
+# print(a44+b44)
+# print(a44-b44)
+# print(a44*b44)
+# print(a44//b44)
+# print(a44%b44)
+# print(format(a44/b44,".2f"))
+
+#6045
+# a,b,c = input().split(' ')
+# a45 = int(a)
+# b45 = int(b)
+# c45 = int(c)
+# hab = a45+b45+c45
+# avg = hab/3
+# print(hab,format(avg,".2f"))
+
+#6048
+# a,b=input().split(' ')
+# print(int(a)<int(b)) # true가 출력됨
