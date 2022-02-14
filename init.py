@@ -98,3 +98,14 @@
 #6055
 # a, b = input().split()
 # print(bool(int(a)) or bool(int(b)))
+
+#6059
+# 비트단위(bitwise)연산자 ~ 를 붙이면 된다.(~ : tilde, 틸드라고 읽는다.)
+# ** 비트단위(bitwise) 연산자는,
+# ~(bitwise not), &(bitwise and), |(bitwise or), ^(bitwise xor),
+# <<(bitwise left shift), >>(bitwise right shift)
+# 가 있다.
+
+#6060
+# a,b=input().split(' ')
+# print(int(a)&int(b))
