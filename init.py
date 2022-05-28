@@ -123,3 +123,8 @@
 # check(a)
 # check(b)
 # check(c)
+
+x=[1,2,3]
+y=[0,2,4]
+
+print(x-y)
