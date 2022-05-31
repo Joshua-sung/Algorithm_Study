@@ -132,3 +132,13 @@
 # while t<=c :
 #   print(chr(t), end=' ')
 #   t += 1
+
+#6078
+# while True:
+#     usrin = input()
+#     print(usrin)
+#     if usrin =="q":
+#         break
+
+
+

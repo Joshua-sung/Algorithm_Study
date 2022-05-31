@@ -30,10 +30,18 @@
 #     return answer
 
 #x만큼 간격이 있는 n개의 숫자
-def solution(x, n):
-    answer = []
-    plus=0
-    for i in range(1,n+1):
-        plus = x*i
-        answer.append(plus)  
-    return answer
+# def solution(x, n):
+#     answer = []
+#     plus=0
+#     for i in range(1,n+1):
+#         plus = x*i
+#         answer.append(plus)  
+#     return answer
+
+# 행렬의 덧셈
+# def solution(arr1, arr2):
+#     answer = arr1
+#     for i in range(len(arr1)):
+#         for j in range(len(arr2[i])):
+#             answer[i][j]=arr1[i][j]+arr2[i][j]
+#     return answer
