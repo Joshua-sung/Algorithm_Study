@@ -45,3 +45,15 @@
 #         for j in range(len(arr2[i])):
 #             answer[i][j]=arr1[i][j]+arr2[i][j]
 #     return answer
+
+#하샤드 수
+def solution(x):
+    answer = True
+    hab=0 
+    for i in str(x):
+        hab+=int(i)
+    if x%hab==0:
+        answer=True
+    else:
+        answer=False
+    return answer
