@@ -47,13 +47,22 @@
 #     return answer
 
 #하샤드 수
-def solution(x):
-    answer = True
-    hab=0 
-    for i in str(x):
+# def solution(x):
+#     answer = True
+#     hab=0 
+#     for i in str(x):
+#         hab+=int(i)
+#     if x%hab==0:
+#         answer=True
+#     else:
+#         answer=False
+#     return answer
+
+#평균 구하기
+def solution(arr):
+    answer = 0
+    hab=0
+    for i in arr:
         hab+=int(i)
-    if x%hab==0:
-        answer=True
-    else:
-        answer=False
+    answer=hab/len(arr)
     return answer

@@ -141,7 +141,13 @@
 #         break
 
 #6080
-n , m = map(int,input().split( ))
-for i in range(1, n+1) :
-  for j in range(1, m+1) :
-    print(i, j)
+# n , m = map(int,input().split( ))
+# for i in range(1, n+1) :
+#   for j in range(1, m+1) :
+#     print(i, j)
+
+#6081
+# print('%X'%n) #n에 저장되어있는 값을 16진수로 출력
+n = int(input(), 16)
+for i in range(1, 16) :
+  print('%X'%n, '*%X'%i, '=%X'%(n*i), sep='')
