@@ -59,10 +59,17 @@
 #     return answer
 
 #평균 구하기
-def solution(arr):
-    answer = 0
-    hab=0
-    for i in arr:
-        hab+=int(i)
-    answer=hab/len(arr)
-    return answer
+# def solution(arr):
+#     answer = 0
+#     hab=0
+#     for i in arr:
+#         hab+=int(i)
+#     answer=hab/len(arr)
+#     return answer
+
+#직사각형 별찍기
+a, b = map(int, input().strip().split(' '))
+for i in range(b):
+    for j in range(a):
+        print('*',end='')
+    print()
