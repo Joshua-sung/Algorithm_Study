@@ -68,8 +68,20 @@
 #     return answer
 
 #직사각형 별찍기
-a, b = map(int, input().strip().split(' '))
-for i in range(b):
-    for j in range(a):
-        print('*',end='')
-    print()
+# a, b = map(int, input().strip().split(' '))
+# for i in range(b):
+#     for j in range(a):
+#         print('*',end='')
+#     print()
+
+#최대공약수와 최소공배수
+def solution(n, m):
+    a = n
+    b = m
+    if n>m:
+        n, m = m, n
+    while m%n:
+        r = m%n
+        m = n
+        n = r
+    return [n, a*b/n]
