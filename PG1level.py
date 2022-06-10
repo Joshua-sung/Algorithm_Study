@@ -75,13 +75,22 @@
 #     print()
 
 #최대공약수와 최소공배수
-def solution(n, m):
-    a = n
-    b = m
-    if n>m:
-        n, m = m, n
-    while m%n:
-        r = m%n
-        m = n
-        n = r
-    return [n, a*b/n]
+# def solution(n, m):
+#     a = n
+#     b = m
+#     if n>m:
+#         n, m = m, n
+#     while m%n:
+#         r = m%n
+#         m = n
+#         n = r
+#     return [n, a*b/n]
+
+#휴대폰 번호 가리기
+def solution(phone_number):
+    answer = ''
+    for i in range(len(phone_number)-4):
+        answer += "*"
+    for i in range(len(phone_number)-4,len((phone_number))):
+        answer += phone_number[i]
+    return answer
