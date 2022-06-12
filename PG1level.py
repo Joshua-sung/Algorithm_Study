@@ -87,10 +87,18 @@
 #     return [n, a*b/n]
 
 #휴대폰 번호 가리기
-def solution(phone_number):
+# def solution(phone_number):
+#     answer = ''
+#     for i in range(len(phone_number)-4):
+#         answer += "*"
+#     for i in range(len(phone_number)-4,len((phone_number))):
+#         answer += phone_number[i]
+#     return answer
+
+#서울에서 김서방 찾기
+def solution(seoul):
     answer = ''
-    for i in range(len(phone_number)-4):
-        answer += "*"
-    for i in range(len(phone_number)-4,len((phone_number))):
-        answer += phone_number[i]
+    for i in range(len(seoul)): 
+        if seoul[i] =="Kim":
+            answer = "김서방은 {}에 있다".format(i)
     return answer
