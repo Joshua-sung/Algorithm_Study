@@ -96,9 +96,22 @@
 #     return answer
 
 #서울에서 김서방 찾기
-def solution(seoul):
-    answer = ''
-    for i in range(len(seoul)): 
-        if seoul[i] =="Kim":
-            answer = "김서방은 {}에 있다".format(i)
+# def solution(seoul):
+#     answer = ''
+#     for i in range(len(seoul)): 
+#         if seoul[i] =="Kim":
+#             answer = "김서방은 {}에 있다".format(i)
+#     return answer
+
+#두 정수의 합
+def solution(a, b):
+    answer = 0
+    if a<=b:
+        for i in range(a,b+1):
+            answer+=i
+    else:
+        c=b
+        d=a
+        for i in range(c,d+1):
+            answer+=i
     return answer
