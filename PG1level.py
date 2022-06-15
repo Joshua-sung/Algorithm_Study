@@ -104,14 +104,27 @@
 #     return answer
 
 #두 정수의 합
-def solution(a, b):
-    answer = 0
-    if a<=b:
-        for i in range(a,b+1):
-            answer+=i
-    else:
-        c=b
-        d=a
-        for i in range(c,d+1):
-            answer+=i
-    return answer
+# def solution(a, b):
+#     answer = 0
+#     if a<=b:
+#         for i in range(a,b+1):
+#             answer+=i
+#     else:
+#         c=b
+#         d=a
+#         for i in range(c,d+1):
+#             answer+=i
+#     return answer
+
+#이상한 문자 만들기
+def solution(s):
+    answer =''
+    nanu=s.split(' ')
+    for i in nanu:
+        for j in range(len(i)):
+            if j%2==0:
+                answer+=i[j].upper()
+            else:
+                answer+=i[j].lower()
+        answer+= ' '
+    return answer[0:-1]
