@@ -117,14 +117,23 @@
 #     return answer
 
 #이상한 문자 만들기
-def solution(s):
-    answer =''
-    nanu=s.split(' ')
-    for i in nanu:
-        for j in range(len(i)):
-            if j%2==0:
-                answer+=i[j].upper()
-            else:
-                answer+=i[j].lower()
-        answer+= ' '
-    return answer[0:-1]
+# def solution(s):
+#     answer =''
+#     nanu=s.split(' ')
+#     for i in nanu:
+#         for j in range(len(i)):
+#             if j%2==0:
+#                 answer+=i[j].upper()
+#             else:
+#                 answer+=i[j].lower()
+#         answer+= ' '
+#     return answer[0:-1]
+
+#자릿수 더하기
+def solution(n):
+    answer = 0
+    n=str(n)
+    for i in n:
+        answer += int(i)
+
+    return answer
