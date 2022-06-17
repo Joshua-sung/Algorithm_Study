@@ -130,10 +130,18 @@
 #     return answer[0:-1]
 
 #자릿수 더하기
+# def solution(n):
+#     answer = 0
+#     n=str(n)
+#     for i in n:
+#         answer += int(i)
+
+#     return answer
+
+#자연수 뒤집어 배열로 만들기
 def solution(n):
-    answer = 0
+    answer = []
     n=str(n)
     for i in n:
-        answer += int(i)
-
+        answer.insert(0,int(i))
     return answer
