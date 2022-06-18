@@ -139,9 +139,26 @@
 #     return answer
 
 #자연수 뒤집어 배열로 만들기
-def solution(n):
-    answer = []
-    n=str(n)
-    for i in n:
-        answer.insert(0,int(i))
+# def solution(n):
+#     answer = []
+#     n=str(n)
+#     for i in n:
+#         answer.insert(0,int(i))
+#     return answer
+
+#콜라스추측
+def solution(num):
+    answer = 0
+    if num==1:
+        return answer
+    while num != 1:
+        if answer > 500:
+            return -1
+            break
+        elif num%2==0:
+            answer+=1
+            num = num/2
+        elif num%2!=0:
+            answer+=1
+            num = num*3+1
     return answer
