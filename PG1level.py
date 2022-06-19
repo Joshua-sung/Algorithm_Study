@@ -147,18 +147,25 @@
 #     return answer
 
 #콜라스추측
-def solution(num):
-    answer = 0
-    if num==1:
-        return answer
-    while num != 1:
-        if answer > 500:
-            return -1
-            break
-        elif num%2==0:
-            answer+=1
-            num = num/2
-        elif num%2!=0:
-            answer+=1
-            num = num*3+1
-    return answer
+# def solution(num):
+#     answer = 0
+#     if num==1:
+#         return answer
+#     while num != 1:
+#         if answer > 500:
+#             return -1
+#             break
+#         elif num%2==0:
+#             answer+=1
+#             num = num/2
+#         elif num%2!=0:
+#             answer+=1
+#             num = num*3+1
+#     return answer
+
+#제일 작은수 제거하기
+def solution(arr):
+    if len(arr)==1:
+        return [-1]
+    arr.remove(min(arr))
+    return arr
