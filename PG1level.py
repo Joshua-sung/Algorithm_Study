@@ -164,8 +164,18 @@
 #     return answer
 
 #제일 작은수 제거하기
-def solution(arr):
-    if len(arr)==1:
-        return [-1]
-    arr.remove(min(arr))
-    return arr
+# def solution(arr):
+#     if len(arr)==1:
+#         return [-1]
+#     arr.remove(min(arr))
+#     return arr
+
+#정수 내림차순 배치하기
+def solution(n):
+    k = list(str(n))
+    k.sort(reverse=True)
+    answer=''
+    for i in k:
+        answer+=str(i)
+
+    return int(answer)
