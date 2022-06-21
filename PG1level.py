@@ -171,11 +171,20 @@
 #     return arr
 
 #정수 내림차순 배치하기
-def solution(n):
-    k = list(str(n))
-    k.sort(reverse=True)
-    answer=''
-    for i in k:
-        answer+=str(i)
+# def solution(n):
+#     k = list(str(n))
+#     k.sort(reverse=True)
+#     answer=''
+#     for i in k:
+#         answer+=str(i)
+#     return int(answer)
 
-    return int(answer)
+#수박수박수 문제
+def solution(n):
+    answer = ''
+    for i in range(n):
+        if i%2==0:
+            answer+='수'
+        else:
+            answer+='박'
+    return answer
