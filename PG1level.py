@@ -180,11 +180,19 @@
 #     return int(answer)
 
 #수박수박수 문제
-def solution(n):
-    answer = ''
-    for i in range(n):
-        if i%2==0:
-            answer+='수'
-        else:
-            answer+='박'
-    return answer
+# def solution(n):
+#     answer = ''
+#     for i in range(n):
+#         if i%2==0:
+#             answer+='수'
+#         else:
+#             answer+='박'
+#     return answer
+
+#문자열 내 p와 y의 개수
+def solution(s):
+    s=s.upper()
+    if s.count('P')==s.count('Y'):
+        return True    
+    else:
+        return False
