@@ -190,9 +190,19 @@
 #     return answer
 
 #문자열 내 p와 y의 개수
-def solution(s):
-    s=s.upper()
-    if s.count('P')==s.count('Y'):
-        return True    
-    else:
-        return False
+# def solution(s):
+#     s=s.upper()
+#     if s.count('P')==s.count('Y'):
+#         return True    
+#     else:
+#         return False
+
+#배열의 중복문자 병합
+def solution(arr):
+    answer = []
+    for i in range(len(arr)):
+        if i==0:
+            answer.append(arr[i])
+        elif arr[i]!=arr[i-1]:
+            answer.append(arr[i])
+    return answer
