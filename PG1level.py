@@ -198,11 +198,21 @@
 #         return False
 
 #배열의 중복문자 병합
-def solution(arr):
-    answer = []
-    for i in range(len(arr)):
-        if i==0:
-            answer.append(arr[i])
-        elif arr[i]!=arr[i-1]:
-            answer.append(arr[i])
-    return answer
+# def solution(arr):
+#     answer = []
+#     for i in range(len(arr)):
+#         if i==0:
+#             answer.append(arr[i])
+#         elif arr[i]!=arr[i-1]:
+#             answer.append(arr[i])
+#     return answer
+
+#문자열다루기
+def solution(s):
+    if len(s) == 4 or len(s) == 6:
+        if s.isdigit() == True:
+            return True
+        else:
+            return False
+    else:
+        return False
