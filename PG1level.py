@@ -208,11 +208,21 @@
 #     return answer
 
 #문자열다루기
-def solution(s):
-    if len(s) == 4 or len(s) == 6:
-        if s.isdigit() == True:
-            return True
-        else:
-            return False
-    else:
-        return False
+# def solution(s):
+#     if len(s) == 4 or len(s) == 6:
+#         if s.isdigit() == True:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+
+#두개뽑아서 더하기
+def solution(numbers):
+    answer = list()
+    for i in range(len(numbers)):
+        for j in range(i+1, len(numbers)):
+            if numbers[i] + numbers[j] not in answer:
+                answer.append(numbers[i] + numbers[j])
+    answer.sort()
+    return answer
