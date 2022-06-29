@@ -218,11 +218,19 @@
 #         return False
 
 #두개뽑아서 더하기
-def solution(numbers):
-    answer = list()
-    for i in range(len(numbers)):
-        for j in range(i+1, len(numbers)):
-            if numbers[i] + numbers[j] not in answer:
-                answer.append(numbers[i] + numbers[j])
-    answer.sort()
+# def solution(numbers):
+#     answer = list()
+#     for i in range(len(numbers)):
+#         for j in range(i+1, len(numbers)):
+#             if numbers[i] + numbers[j] not in answer:
+#                 answer.append(numbers[i] + numbers[j])
+#     answer.sort()
+#     return answer
+
+#약수의 합
+def solution(n):
+    answer = 0
+    for i in range(1,n+1):
+        if n%i==0:
+            answer+=i
     return answer
