@@ -148,6 +148,14 @@
 
 #6081
 # print('%X'%n) #n에 저장되어있는 값을 16진수로 출력
-n = int(input(), 16)
-for i in range(1, 16) :
-  print('%X'%n, '*%X'%i, '=%X'%(n*i), sep='')
+# n = int(input(), 16)
+# for i in range(1, 16) :
+#   print('%X'%n, '*%X'%i, '=%X'%(n*i), sep='')
+
+#6082
+a = int(input())
+for i in range(1,a+1):
+    if (i%10==3 or i%10==6 or i%10==9):
+        print('X',end=' ')
+        continue    
+    print(i,end=' ')
