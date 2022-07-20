@@ -228,9 +228,32 @@
 #     return answer
 
 #약수의 합
-def solution(n):
-    answer = 0
-    for i in range(1,n+1):
-        if n%i==0:
-            answer+=i
-    return answer
+# def solution(n):
+#     answer = 0
+#     for i in range(1,n+1):
+#         if n%i==0:
+#             answer+=i
+#     return answer
+
+#시저 암호
+s=input("문자열")
+n=int(input("숫자"))
+
+def solution(s, n):
+    answer=""
+    blank=""
+    for i in s:
+        if i!=" " and 97<=ord(i)+n<=122:
+            blank=ord(i)+n
+            answer+=chr(blank)
+        elif i!=" " and 65<=ord(i)+n<=90:
+            blank=ord(i)+n
+            answer+=chr(blank)
+        elif i==" ":
+            answer+=" "            
+        else:
+            blank=ord(i)+n-26
+            answer+=chr(blank)
+    return print(answer)
+
+
