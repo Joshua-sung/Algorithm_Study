@@ -171,9 +171,19 @@
 # print(cnt)
 
 #6084
-h, b, c, s = map(int,input().split( ))
-bit= h*b*c*s
-byte=bit/8
-kb=byte/1024
-mb=kb/1024
-print("%0.1f MB" % mb)
+# h, b, c, s = map(int,input().split( ))
+# bit= h*b*c*s
+# byte=bit/8
+# kb=byte/1024
+# mb=kb/1024
+# print("%0.1f MB" % mb)
+
+#6086
+usrin= int(input())
+allsum=0
+
+for i in range(1,usrin+1):
+    allsum=+i
+    if allsum >= usrin:
+        break
+print(allsum)

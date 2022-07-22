@@ -254,6 +254,6 @@ def solution(s, n):
         else:
             blank=ord(i)+n-26
             answer+=chr(blank)
-    return print(answer)
+    return answer
 
 
