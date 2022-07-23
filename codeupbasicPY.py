@@ -179,11 +179,20 @@
 # print("%0.1f MB" % mb)
 
 #6086
-usrin= int(input())
-allsum=0
+# usrin= int(input())
+# allsum=0
 
-for i in range(1,usrin+1):
-    allsum=+i
-    if allsum >= usrin:
-        break
-print(allsum)
+# for i in range(1,usrin+1):
+#     allsum=+i
+#     if allsum >= usrin:
+#         break
+# print(allsum)
+
+#6087
+x = int(input())
+
+for i in range(1, x+1) :
+  if i%3 == 0 :
+    continue
+  else :
+    print(i, end = ' ')
