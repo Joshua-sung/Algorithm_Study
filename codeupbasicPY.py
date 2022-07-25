@@ -189,10 +189,16 @@
 # print(allsum)
 
 #6087
-x = int(input())
+# x = int(input())
 
-for i in range(1, x+1) :
-  if i%3 == 0 :
-    continue
-  else :
-    print(i, end = ' ')
+# for i in range(1, x+1) :
+#   if i%3 == 0 :
+#     continue
+#   else :
+#     print(i, end = ' ')
+
+#6088
+a,d,n=map(int, input().split())
+for i in range(2, n+1):
+   a+=d
+print(a)
