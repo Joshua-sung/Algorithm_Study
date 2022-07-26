@@ -198,7 +198,14 @@
 #     print(i, end = ' ')
 
 #6088
-a,d,n=map(int, input().split())
-for i in range(2, n+1):
-   a+=d
-print(a)
+# a,d,n=map(int, input().split())
+# for i in range(2, n+1):
+#    a+=d
+# print(a)
+
+#6089
+a,r,n = map(int, input().split())
+total=a
+for i in range(0,n-1):
+    total=total*r
+print(total)
