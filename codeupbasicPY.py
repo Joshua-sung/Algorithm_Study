@@ -204,8 +204,15 @@
 # print(a)
 
 #6089
-a,r,n = map(int, input().split())
+# a,r,n = map(int, input().split())
+# total=a
+# for i in range(0,n-1):
+#     total=total*r
+# print(total)
+
+#6090
+a,m,d,n = map(int,input().split())
 total=a
-for i in range(0,n-1):
-    total=total*r
+for i in range(1,n):
+    total=total*m+d
 print(total)
