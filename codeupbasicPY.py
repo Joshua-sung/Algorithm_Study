@@ -211,8 +211,16 @@
 # print(total)
 
 #6090
-a,m,d,n = map(int,input().split())
-total=a
-for i in range(1,n):
-    total=total*m+d
-print(total)
+# a,m,d,n = map(int,input().split())
+# total=a
+# for i in range(1,n):
+#     total=total*m+d
+# print(total)
+
+#6091
+a, b, c = map(int, input().split())
+day = 1
+while (day%a!=0 or day%b!=0 or day%c!=0) :
+  day += 1
+
+print(day)
