@@ -218,9 +218,25 @@
 # print(total)
 
 #6091
-a, b, c = map(int, input().split())
-day = 1
-while (day%a!=0 or day%b!=0 or day%c!=0) :
-  day += 1
+# a, b, c = map(int, input().split())
+# day = 1
+# while (day%a!=0 or day%b!=0 or day%c!=0) :
+#   day += 1
+# print(day)
 
-print(day)
+# 6092
+n = int(input())
+a = input().split()
+
+for i in range(n):
+    a[i] = int(a[i])
+
+d = []
+for i in range(24):
+    d.append(0)
+    
+for i in range(n):
+    d[a[i]] += 1
+    
+for i in range(1, 24):
+  print(d[i], end=" ")
