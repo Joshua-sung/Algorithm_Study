@@ -236,24 +236,24 @@
 #     return answer
 
 #시저 암호
-s=input("문자열")
-n=int(input("숫자"))
+# s=input("문자열")
+# n=int(input("숫자"))
 
-def solution(s, n):
-    answer=""
-    blank=""
-    for i in s:
-        if i!=" " and 97<=ord(i)+n<=122:
-            blank=ord(i)+n
-            answer+=chr(blank)
-        elif i!=" " and 65<=ord(i)+n<=90:
-            blank=ord(i)+n
-            answer+=chr(blank)
-        elif i==" ":
-            answer+=" "            
-        else:
-            blank=ord(i)+n-26
-            answer+=chr(blank)
-    return answer
+# def solution(s, n):
+#     answer=""
+#     blank=""
+#     for i in s:
+#         if i!=" " and 97<=ord(i)+n<=122:
+#             blank=ord(i)+n
+#             answer+=chr(blank)
+#         elif i!=" " and 65<=ord(i)+n<=90:
+#             blank=ord(i)+n
+#             answer+=chr(blank)
+#         elif i==" ":
+#             answer+=" "            
+#         else:
+#             blank=ord(i)+n-26
+#             answer+=chr(blank)
+#     return answer
 
 
