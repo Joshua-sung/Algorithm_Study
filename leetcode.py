@@ -7,11 +7,16 @@
 #             return ans
 
 #2469. Convert the Temperature
+# class Solution:
+#     def convertTemperature(self, celsius: float) -> List[float]:
+#         ans=[]
+#         Kelvin = celsius + 273.15
+#         Fahrenheit = celsius * 1.80 + 32.00
+#         ans.append(Kelvin)
+#         ans.append(Fahrenheit)
+#         return ans
+    
+#1108. Defanging an IP Address
 class Solution:
-    def convertTemperature(self, celsius: float) -> List[float]:
-        ans=[]
-        Kelvin = celsius + 273.15
-        Fahrenheit = celsius * 1.80 + 32.00
-        ans.append(Kelvin)
-        ans.append(Fahrenheit)
-        return ans
+    def defangIPaddr(self, address: str) -> str:
+        return address.replace('.','[.]')
