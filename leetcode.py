@@ -17,6 +17,17 @@
 #         return ans
     
 #1108. Defanging an IP Address
+# class Solution:
+#     def defangIPaddr(self, address: str) -> str:
+#         return address.replace('.','[.]')
+
+#2011. Final Value of Variable After Performing Operations
 class Solution:
-    def defangIPaddr(self, address: str) -> str:
-        return address.replace('.','[.]')
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        answer=0
+        for i in operations:
+            if "++" in i:
+                answer+=1
+            else:
+                answer-=1
+        return answer
